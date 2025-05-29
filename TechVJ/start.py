@@ -61,7 +61,7 @@ async def send_start(client: Client, message: Message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
     buttons = [[
-        InlineKeyboardButton("🖤 Developer 🖤", url = "@Deadly_Rizzu")
+        InlineKeyboardButton("🖤 Developer 🖤", url = "https://t.me/deadly_rizzu")
     ],[
         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/rizzu_bots_support'),
         InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/rizzu_bots')
